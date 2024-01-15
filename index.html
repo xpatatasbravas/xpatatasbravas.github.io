@@ -8,16 +8,17 @@
     <script src="app.js"></script>
 </head>
 <body>
-    <h1>OOP Demo</h1>
-    <button>Hola</button>
 
-    <script>
-        const authorLogin = new Author('john@email.com', 'author');
-        authorLogin.login('john@email.com', 'author'); // Login Successfully
-        
-        const adminLogin = new Admin('sally@gmail.com', 'admin');
-        adminLogin.login('sally@gmail.com', 'admin'); // Admin Login Successfully
-    </script>
+    <h1>PIG LATIN GAME</h1>
+    <form>
+        <label for="words">Text to convert:</label>
+        <input type="text" id="userinput"><br><br>
+    </form>
+    <button id="convertButton">Convert</button>
+    <p id="result"></p>
+
+    <script src="functions.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
 
