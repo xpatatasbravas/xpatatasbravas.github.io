@@ -1,9 +1,11 @@
 function convertToPigLatin(word) {
-    let vowels = ["A", "E", "I", "O", "U", "a", "e", "i", "o", "u"];
+    let vowels = ["a", "e", "i", "o", "u"];
     let firstVowelIndex = -1;
-    
+    word = word.toLowerCase();
+
+
     for (let i = 0; i < word.length; i++) {
-        if(vowels.includes(word[i])) {
+        if(vowels.includes(word[i].toLowerCase())) {
             firstVowelIndex = i;
             break;
         }
@@ -22,5 +24,7 @@ function convertToPigLatin(word) {
     }
 }
 
-console.log(convertToPigLatin("hello"))
 
+if (word.lenght > 100) {
+    console.log("Too large word")
+}

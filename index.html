@@ -1,25 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OOP Demo</title>
-    <script src="app.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PIG LATIN</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
 
-    <h1>PIG LATIN GAME</h1>
-    <form>
-        <label for="words">Text to convert:</label>
-        <input type="text" id="userinput"><br><br>
-    </form>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="display-1">PIG LATIN GAME</h1>
+    </header>
+
+    <main class="main">
+      <section>
+        <div class="container" id="input-container">
+          <h5 class="input-group__label" for="words">Text to convert</h5>
+          <input class="input-group__input" id="userinput" />
+          <button type="button" class="btn" id="convertButton">Translate word</button>
+        </div>
+        <div class="container">
+          <h5 class="input-group__label" for="words">Translation</h5>
+          <input class="input-group__input" id="result" readonly value="">
+        </div>
+      </section>
+
+      <section>
+        
+        <div class="container md border" id="history">
+          <h5 class="historyTitle">History</h5>
+
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--         <div class="input-group">
+          <label class="input-group__label" for="words">Text to convert:</label>
+          <input type="text" id="userinput" class="input-group__input" value="This is my input" />
+        </div>
+      </div>
     <button id="convertButton">Convert</button>
     <p id="result"></p>
+    <p class = "other_class">This is a p</p> -->
 
     <script src="functions.js"></script>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
 
 <!-- REFERENCE:
