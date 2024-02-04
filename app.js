@@ -7,8 +7,13 @@ document.getElementById('convertButton').addEventListener('click', function() {
   // Define a regular expression to check if the input contains only letters
   var regex = /^[A-Za-z]+$/;
 
+  if (text.length > 20) {
+    alert("The word to translate is too large. The limit of characters is 20.");
+    document.getElementById('result').textContent = "Enter a valid string";
+    document.getElementById('userinput').value = '';
+  }
   // Test if the input text matches the regex (contains only letters)
-  if (regex.test(text)){
+  else if (regex.test(text)){
     // Convert the text to Pig Latin (assuming 'convertToPigLatin' is a defined function)
     var convertedText = convertToPigLatin(text);
 
